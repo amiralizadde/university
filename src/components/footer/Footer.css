@@ -1,0 +1,115 @@
+#rowFooter {
+  position: relative;
+  display: flex;
+  /* height: 30vw; */
+}
+#firstColElem {
+  width: 30vw;
+  height: 30vw;
+  clip-path:polygon(0% 0%, 71% 0%, 95% 40%, 50% 100%, 0% 100%);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  
+}
+#secondColElem {
+  width: 90vw;
+  height: 30vw;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  clip-path:polygon(100% 0%, 100% 50%, 100% 100%, 8% 100%, 23% 40%, 15% 0%);
+  background: linear-gradient(to bottom , #C4c4c4 40% , rgb(150,50,50) 30%);
+}
+#rowTextFooter{
+    clip-path:polygon(31% 9%, 100% 9%, 100% 100%, 39% 100%, 23% 40%);
+    background-color: white;
+  
+}
+.icon{
+    width: 20px;
+    height: 20px;
+}
+.icon:hover{
+    transform: scale(1.2,1.2);
+    color: blue;
+}
+.argImg{
+    width: 100%;
+}
+
+@media screen and (min-width:1200px){
+
+    #firstColElem {
+        width: 30vw;
+        height: 30vw;
+    }
+
+    #secondColElem {
+        width: 90vw;
+        height: 30vw;
+    }
+
+}
+#infoCol{
+    padding-left: 40%;
+}
+@media screen and (max-width:992px){
+
+    #firstColElem {
+       display: none;
+    }
+    #secondColElem {
+        clip-path:unset;
+        position: relative;
+        width: 100%;
+        height: auto;
+         border: 5px solid tomato;
+    }
+    #rowTextFooter{
+        clip-path:unset;
+        background-image: url('../../image/footer.jpeg');
+        background-position: center;
+        background-size: cover;
+        color: white;
+        width: auto;
+        height: 40vw;
+        bottom: 0;
+        border: 5px solid rgb(34, 206, 43);
+    }
+    #infoCol{
+        padding-left: 10%;
+        
+    }
+    #rowFooter{
+        background-image: url('../../image/footer.jpeg');
+    }
+    .txt{
+        background-color: rgba(151, 150, 150, 0.5);
+    }
+    .argImg{
+        /* width: 50%; */
+    }
+}
+
+@media screen and (max-width:768px) {
+
+    #armCol{
+        position: absolute;
+        top: 0;
+    }
+    #infoCol{
+        padding-left: 10%;
+        padding-top: 12%;
+    }
+    .txt{
+       padding: 5px;
+       margin: 0;
+    }
+    .argImg{
+        width:150px;
+        height: auto;
+    }
+}

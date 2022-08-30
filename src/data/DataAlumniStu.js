@@ -1,0 +1,70 @@
+const AlumniStu = [
+  {
+    id: 1,
+    name: "Mahmoud Hoseinzade",
+    grade: "PhD",
+    linkedIn: "https://www.linkedin.com/in/mahmoud-hosseinzadeh-ab733262/",
+  },
+  {
+    id: 2,
+    name: "Vahid Shahabadi ",
+    grade: "MSc",
+    linkedIn:"https://www.linkedin.com/in/vahid-shahabadi-82bba1213/",
+    CurrentUniLink:
+    "https://www.mcgill.ca/meteo/facultystaff/current-graduate-students/current-graduate-students-complete-list#mylinkVAHID",
+    CurrentUniText: "PhD student in McGill University",
+  },
+  {
+    id: 3,
+    name: "Mohammad hosein khosravi",
+    grade: "MSc",
+    CurrentUniLink: "#",
+    CurrentUniText: "PhD Student at Leibniz Institute of Photonics Technology",
+    linkedIn: "www.linkedin.com/in/mohammad-hossein-khosravi/",
+  },
+  { id: 4, name: "Kebria Taheri ", grade: "MSc" },
+  { id: 5, name: "Mahsa Salami", grade: "MSc" },
+  { id: 6, name: "Farnoosh Julaeian", grade: "MSc" },
+  { id: 7, name: "Rayehe Rezaei", grade: "MSc" },
+  {
+    id: 8,
+    name: "Jamal Soltani",
+    grade: "MSc",
+    linkedIn: "https://www.linkedin.com/in/jamalsoltani/",
+  },
+  {
+    id: 9,
+    name: "Milad Malekmohammadi",
+    grade: "MSc",
+    linkedIn: "https://www.linkedin.com/in/milad-malekmohammadi-58a410224/",
+  },
+  {
+    id: 10,
+    name: "Habib Moradi",
+    grade: "MSc",
+    linkedIn: "https://www.linkedin.com/in/habib-moradi-95b7b072/",
+  },
+  { id: 11, name: "Armin Ebrahimi ", grade: "MSc" },
+  {
+    id: 12,
+    name: "Mohsen Samadzadeh",
+    grade: "MSc",
+    linkedIn: "https://www.linkedin.com/in/mohsen-samadzadeh-4a900919b/",
+  },
+  {
+    id: 13,
+    name: "Jamal Bayat",
+    grade: "MSc",
+    linkedIn: "https://www.linkedin.com/in/jamal-bayat-605a20159/",
+  },
+  {
+    id: 14,
+    name: "Farshad Darabi",
+    grade: "MSc",
+    linkedIn: "https://www.linkedin.com/in/farshad-darabi-5bb470112/",
+  },
+  { id: 15, name: "Farshad Soltani", grade: "MSc" },
+  { id: 16, name: "Zekra Karimi ", grade: "MSc" },
+  { id: 17, name: "S.bagher Ahmadinejad", grade: "MSc" },
+];
+export default AlumniStu;

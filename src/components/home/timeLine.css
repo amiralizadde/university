@@ -1,0 +1,106 @@
+#rowElem {
+  display: flex;
+  justify-content: flex-start;
+  position: relative;
+}
+#colElem {
+  padding: 30px;
+  position: relative;
+}
+#colContainer {
+  position: relative;
+  padding: 30px;
+  background-color: skyblue;
+  z-index: 1 !important;
+}
+
+#rowElem:nth-child(even) {
+  justify-content: flex-end;
+}
+#rowElem:nth-child(even) #colContainer::after {
+  left: 0;
+  right: unset;
+  transform: rotate(45deg) translate(0px, 10px) scale(1.2, 1.2);
+}
+#rowElem:after {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 100%;
+  left: calc(50% - 2px);
+  background-color: #c4c4c4;
+}
+#colContainer::after {
+  content: "";
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  background-color: skyblue;
+  top: calc(50% - 15px);
+  right: 0;
+  transform: rotate(45deg) translateX(8px) scale(1.2, 1.2);
+}
+#colContainer .tag {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  top: calc(50% - 10px);
+  right: 0;
+  transform: translateX(42px);
+  border-radius: 50%;
+  border: 3px solid #c4c4c4;
+}
+#rowElem:nth-child(even) #colContainer .tag {
+  right: unset;
+  left: 0;
+  transform: translateX(-42px);
+}
+#colContainer .date {
+  position: absolute;
+  top: calc(50% - 20px);
+  margin-left: 110%;
+  text-align: center;
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: white;
+}
+#rowElem:nth-child(even) #colContainer .date {
+  right: 0;
+  margin-right: 115%;
+}
+@media screen and (max-width: 991px) {
+  #colContainer::after {
+    left: calc(50% - 13px);
+    top: -12px;
+  }
+  #rowElem:nth-child(even) #colContainer::after {
+    left: 50%;
+    top: -15px;
+    transform: rotate(45deg) translate(0px, 10px);
+  }
+  #colContainer .tag {
+    top: 0;
+    left: calc(50% - 20px);
+    right: unset;
+    transform: translate(10px, -42px);
+  }
+  #rowElem:nth-child(even) #colContainer .tag {
+    left: unset;
+    right: calc(50% - 20px);
+    transform: translate(-10px, -42px);
+  }
+  #colContainer .date {
+    top:0;
+    left: calc(50% + 20px);
+    margin: unset;
+    transform: translateY(-55px);
+  }
+  #rowElem:nth-child(even) #colContainer .date {
+    top:0;
+    right: unset;
+    left: calc(50% + 20px);
+    margin: unset;
+    transform: translateY(-55px);
+  }
+}

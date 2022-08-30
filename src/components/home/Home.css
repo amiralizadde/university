@@ -1,0 +1,63 @@
+@font-face {
+  font-family: 'Inter';
+  src: local('Inter'), url(../../fonts/static/Inter-Regular.ttf) format('truetype');
+}
+*{
+  font-family: 'Inter';
+}
+
+#image-slides {
+  height: 50vw;
+  position: relative;
+  object-fit: cover;
+  transition: all 1s;
+  animation: slide 1s ease;
+}
+#right {
+  position: absolute;
+  top: 60%;
+  right: 0;
+  opacity: 0;
+  color: white;
+  font-size: 40px;
+  transition: all 0.5s ease;
+  overflow-x: hidden;
+}
+#left {
+  position: absolute;
+  top: 60%;
+  left: 0;
+  opacity: 0;
+  color: white;
+  font-size: 40px;
+  transition: all 0.5s ease;
+}
+#imageHome:hover #right {
+  color: coral;
+  opacity: 1;
+  transform: translateX(-70px) scale(1.5, 1.5);
+}
+#imageHome:hover #left {
+  color: coral;
+  opacity: 1;
+  transform: translateX(70px) scale(1.5, 1.5);
+}
+#imageHome:hover #right:hover,
+#imageHome:hover #left:hover {
+    cursor: pointer;
+}
+@keyframes slide {
+    0%{
+        transform: translateX(-70px);
+    }
+    50%{
+        transform: translateX(50px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+/* _____textContainer_______ */
+#textContainer{
+    background: linear-gradient(to top , rgba(0,0,0,0.4) 0% , rgba(0,0,0,0.8) 100%);
+}
